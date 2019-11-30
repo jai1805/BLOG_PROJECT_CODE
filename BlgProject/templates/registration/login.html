@@ -1,0 +1,11 @@
+{%extends 'BlgApp/base.html'%}
+
+{%block parent_block%}
+<div class = "container">
+<form method ='POST'>
+  {{form.as_p}}
+  {% csrf_token %}
+  <input type = "submit" value = "login">
+</form>
+</div>
+{%endblock%}
